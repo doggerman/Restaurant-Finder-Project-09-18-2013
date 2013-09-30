@@ -1,0 +1,637 @@
+/* General Styling */
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.float_left{
+	float: left;
+}
+.float_right{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+.clear_right{
+	clear:right;
+}
+.clear_left{
+	clear:left;
+}
+
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Averia+Libre:700italic);
+@import url(http://fonts.googleapis.com/css?family=Candal);
+
+/* home page  */
+.full-screen-background-image{
+  min-height: 100%;
+  min-width: 1024px;
+  max-width: 1600px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+#wrapper{
+  position: relative;
+  width: 910px;
+  min-height: 400px;
+  margin: 150px auto 0px;
+  text-align: center;
+}
+	#wrapper .transbox{
+	  width:880px;
+	  margin:30px 0px 15px 0px;
+	  padding: 20px 0px;
+	  background: rgba(255,255,255,0.6);
+	  filter:alpha(opacity=60); /* For IE8 and earlier */
+      -webkit-border-radius: 10px;
+	  -moz-border-radius: 10px;
+	  border-radius: 10px;
+  	}
+		#wrapper .transbox h1{
+			font-size: 70px;
+			text-align: center;
+			color: #6C0B05;
+			font-weight: 100;
+		}
+		#wrapper .transbox h3{
+			font-size: 45px;
+			color: #6C0B05;
+		}
+	#wrapper #form{
+		margin: 100px 0px 0px 20px;
+		padding: 0px 20px 0px 30px;
+	}
+		#wrapper #form p:nth-child(2){
+			margin-right: 45px;
+		}
+		#wrapper #form .text_field:focus{
+			outline: 0;
+		}
+		#wrapper #form .text_field{
+			width:800px;
+		}
+		::-webkit-input-placeholder{
+		   color: #428bca;
+		   font-weight: bold;
+		   background-color: #ffffff;
+		}
+
+		:-moz-placeholder{ /* Firefox 18- */
+		   color: #428bca;
+		   font-weight: bold;  
+		}
+
+		::-moz-placeholder{  /* Firefox 19+ */
+		   color: #428bca;
+		   font-weight: bold;
+		}
+
+		:-ms-input-placeholder{  
+		   color: #428bca;
+		   font-weight: bold;  
+		}
+		#wrapper #form #checkbox{
+			margin: 20px 0px 20px 5px;
+			color: #ffffff;
+		   	font-weight: bolder;
+		   	width:780px;
+		   	font-family: 'Candal', sans-serif;
+		}
+			#wrapper #form #checkbox label:first-child{
+				margin: 0px 30px 0px 10px;
+				font-size: 22px;
+			}
+			#wrapper #form #checkbox .checkbox{
+				margin: 0px 30px;
+				font-size: 22px;
+			}
+			#wrapper #form #checkbox .big-checkbox{
+				-webkit-appearance: none;
+				background-color: #fafafa;
+				border: 1px solid #cacece;
+				cursor: pointer;
+				box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+				padding: 10px;
+				border-radius: 3px;
+				position: relative;
+			}
+			#wrapper #form #checkbox .big-checkbox:active{
+				box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+			}
+
+			#wrapper #form #checkbox .big-checkbox:checked{
+				background-color: #e9ecee;
+				border: 1px solid #adb8c0;
+				box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+				color: #99a1a7;
+			}
+			#wrapper #form #checkbox .big-checkbox:checked:after{
+				content: '\2714';
+				font-size: 16px;
+				position: absolute;
+				top: 0px;
+				left: 6px;
+				color: #99a1a7;
+			}
+		#wrapper #form .btn{
+			margin: 0px 0px 0px 270px;
+			padding: 8px 5px;
+			width:250px;
+		}
+/* Restaurant List page */
+#list_page{
+	height: 100%;
+  	width: 100%;
+}
+.shattered_background{
+  background-image:url('../images/shattered.png');
+  background-repeat:repeat;
+}
+/* Restaurant List page - left search bar */
+#wrapper_list{
+	position: relative;
+	width: 1070px;
+	margin: 50px auto 20px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	box-shadow: 0px 0px 10px #888888;
+	background: rgba(255,255,255,0.6);
+    filter:alpha(opacity=60); /* For IE8 and earlier */
+
+}
+	#wrapper_list #left_search{
+		width: 250px;
+		margin:10px 0px 0px 20px;
+	}
+		#wrapper_list #side_bar_form{
+				margin: 0px 0px 0px 20px;
+			}
+				#wrapper_list #side_bar_form .text_field:focus{
+					outline: 0;
+				}
+				#wrapper_list #side_bar_form .text_field{
+					width:200px;
+					-webkit-border-radius: 50px;
+					-moz-border-radius: 50px;
+					border-radius: 50px;
+					margin: 0px 0px 10px 0px;
+				}
+				::-webkit-input-placeholder{
+				   color: #428bca;
+				   font-weight: bold;
+				   background-color: #ffffff;
+				}
+				:-moz-placeholder{ /* Firefox 18- */
+				   color: #428bca;
+				   font-weight: bold;  
+				}
+				::-moz-placeholder{  /* Firefox 19+ */
+				   color: #428bca;
+				   font-weight: bold;
+				}
+				:-ms-input-placeholder{  
+				   color: #428bca;
+				   font-weight: bold;  
+				}
+				#wrapper_list #left_search #side_bar_form #checkbox{
+					color: #000000;
+				   	font-weight: bolder;
+				   	font-family: 'Candal', sans-serif;
+				   	font-size: 18px;
+				   	margin-left:5px;
+				   	margin-top: 0px;
+				}
+					#wrapper_list #left_search #side_bar_form #checkbox li{
+						list-style-type: none;
+					}
+					#wrapper_list #side_bar_form #checkbox .big-checkbox{
+					-webkit-appearance: none;
+					background-color: #fafafa;
+					border: 1px solid #cacece;
+					cursor: pointer;
+					box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+					padding: 8px;
+					border-radius: 3px;
+					position: relative;
+					}
+					#wrapper_list #side_bar_form #checkbox .big-checkbox:active{
+						box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+					}
+					#wrapper_list #side_bar_form #checkbox .big-checkbox:checked{
+						background-color: #e9ecee;
+						border: 1px solid #adb8c0;
+						box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+						color: #99a1a7;
+					}
+					#wrapper_list #side_bar_form #checkbox .big-checkbox:checked:after{
+						content: '\2714';
+						font-size: 10px;
+						position: absolute;
+						top: 0px;
+						left: 4px;
+						color: #99a1a7;
+					}
+	/* Restaurant List page - right restaurant info */
+	#wrapper_restaurant #right_list{
+			padding: 0px;
+		}
+	#wrapper_list #right_list{
+		width:500px;
+		margin: 0px 0px 0px 300px;
+		border-left: 2px solid #D8D9DA;
+	}
+		#wrapper_list #right_list .restaurant_info{
+			border-bottom: 2px solid #D8D9DA;
+			width:500px;
+			padding: 10px 0px 15px 20px;
+		}
+			#wrapper_list #right_list .restaurant_info h3{
+				margin: 0px;
+			}		
+				#wrapper_list #right_list .restaurant_info img{
+					width:70px;
+					height:70px;
+					vertical-align: top;
+					border:1px solid black;
+				}
+				#wrapper_list #right_list .restaurant_info a{
+					margin: 0px 0px 0px 10px;
+					border-bottom: 1px solid grey;
+					text-decoration: none;
+				}
+			#wrapper_list #right_list .restaurant_info p:first-child{
+				margin: 10px 0px 0px 80px;
+				line-height: 17px;
+			}
+			#wrapper_list #right_list .restaurant_info p{
+				margin: 0px 0px 0px 80px;
+				line-height: 17px;
+			}
+			#wrapper_list #right_list .restaurant_info .categories{
+				margin: 15px 0px 0px 0px;
+			}
+				#wrapper_list #right_list .restaurant_info .categories li:first-child{
+					margin: 0px 20px 0px 0px;
+					text-decoration:underline;
+				}
+				#wrapper_list #right_list .restaurant_info .categories li{
+					display: inline;
+					margin: 0px 20px;
+					text-decoration:underline;
+				}
+			#wrapper_list #right_list .restaurant_info .ratings{
+				margin: 5px 0px 0px 0px;
+			}
+				#wrapper_list #right_list .restaurant_info .ratings li:first-child{
+					margin: 0px 5px 0px 0px;
+				}
+				#wrapper_list #right_list .restaurant_info .ratings li{
+					display: inline;
+					margin: 0px 8px;
+				}
+				#wrapper_list #right_list .restaurant_info .ratings li img{
+					width:96px;
+					height:19px;
+					border: 0px;
+				}
+		#wrapper_list #right_list div:last-child{
+			border-bottom:0px; 
+			width:500px;
+			padding: 10px 0px 15px 20px;
+		}
+	#wrapper_list #bottom_btn{
+		margin: 0px 0px 15px 550px;
+		height:30px;
+		padding:5px;
+	}
+
+/* Restaurant detailed page */
+#wrapper_restaurant{
+	width:1120px;
+	position: relative;
+	margin: 50px auto 20px;
+	padding: 20px;
+	box-shadow: 0px 0px 10px #888888;
+	background: rgba(255,255,255,0.6);
+    filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+	/* Restaurant detailed page - left restaurant details */
+	#wrapper_restaurant #left_details{
+		width:600px;
+		border-right: 2px solid #D8D9DA;
+	}
+	/* Restaurant detailed page - left restaurant details - top section */
+	#wrapper_restaurant #left_details #success_message{
+		color: green;
+		font-size: 16px;
+	}
+	#wrapper_restaurant #left_details #restaurant_details{
+		width:500px;
+		margin:60px 20px 15px 0px;
+	}
+		#wrapper_restaurant #left_details #restaurant_details h3{
+			margin: 0px;
+		}		
+			#wrapper_restaurant #left_details #restaurant_details img{
+				width:130px;
+				height:130px;
+				vertical-align: top;
+				border:1px solid black;
+				margin-bottom: 8px;
+			}
+			#wrapper_restaurant #left_details #restaurant_details #restaurant_name a{
+				margin: 0px 0px 10px 25px;
+				color: #6C0B05;
+				text-decoration: none;
+			}
+		#wrapper_restaurant #left_details #restaurant_details p:first-child{
+			margin: 10px 0px 0px 155px;
+			line-height: 17px;
+		}
+		#wrapper_restaurant #left_details #restaurant_details p{
+			margin: 0px 0px 0px 155px;
+			line-height: 17px;
+		}
+		#wrapper_restaurant #left_details #restaurant_details .rate_button{
+			margin: 5px 0px 0px 25px;
+			line-height: 17px;
+			padding:4px;
+			font-size: 12px;
+		}	
+		/* rating modal */
+		#wrapper_restaurant #left_details #rate .modal-body .star_rating {
+			list-style: none;
+		}
+			#wrapper_restaurant #left_details #rate .modal-body .star_rating li {
+				width: 20px;
+				height: 20px;
+				display:inline-block;
+				background-image: url('../images/blank_star_small.png');
+				background-size: cover;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				background-repeat: no-repeat;
+				cursor: pointer;
+			}
+
+			#wrapper_restaurant #left_details #rate .modal-body .rated {
+				background-image: url('../images/full_star_small.png') !important;
+			}
+			#wrapper_restaurant #left_details #rate .modal-title{
+				text-align: center;
+				color: red;
+			}
+			/*#wrapper_restaurant #left_details #rate .modal-body #star_rating{
+				list-style: none;
+			}*/
+			#wrapper_restaurant #left_details #rate .modal-body li{
+				list-style-type: none;
+			}
+			#wrapper_restaurant #left_details #rate #ratings .star{
+				width:150px;
+			}
+			#wrapper_restaurant #left_details #rate #ratings #error .error{
+				color: red;
+			}
+			/*#wrapper_restaurant #left_details #rate .modal-body img{
+				width: 20px;
+				height: 20px;
+				border:0px;
+				display:inline-block;
+				background-image: url('../images/blank_star_small.png');
+				background-size: cover;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				background-repeat: no-repeat;
+				cursor: pointer;
+			}*/
+			/*#wrapper_restaurant #left_details #rate .modal-body .rated{
+				background-image: url('../images/full_star_small.png') !important;
+			}*/
+			#wrapper_restaurant #left_details #rate .required{
+				background-image:url('../images/icon-required-field.png');
+				background-repeat:no-repeat;  
+				background-position:center; 
+			}
+		#wrapper_restaurant #left_details #restaurant_details a{
+			margin-left: 7px;
+		}
+	/* Restaurant detailed page - left restaurant details - reviews section */
+	#wrapper_restaurant #left_details #reviews{
+		border-top: 2px solid #D8D9DA;
+		border-bottom: 2px solid #D8D9DA;
+		padding: 5px 0px 20px 0px;
+	}
+		#wrapper_restaurant #left_details #reviews li{
+			list-style-type: none;
+			line-height: 30px;
+		}
+			#wrapper_restaurant #left_details #reviews .stars{
+				margin: 0px 0px 0px 30px;
+			}
+		#wrapper_restaurant #left_details #reviews div{
+			margin-bottom: 10px;
+			padding: 0px;
+		}
+			#wrapper_restaurant #left_details #reviews .required{
+				background-image:url('../images/icon-required-field.png');
+				background-repeat:no-repeat;  
+				background-position:center; 
+			}
+		#wrapper_restaurant #left_details #reviews #button{
+			margin:10px 0px 0px 0px;
+		}
+	/* Restaurant detailed page - left restaurant details - comments section */
+	#wrapper_restaurant #left_details #comment_messages .error{
+		color: red;
+	}
+	#wrapper_restaurant #left_details #comment_messages #success{
+		color: green;
+	}
+	#wrapper_restaurant #left_details #comment_form .textarea{
+		width:580px;
+	}
+	#wrapper_restaurant #left_details #comments{
+		padding: 25px 0px 20px 10px;
+	}
+		#wrapper_restaurant #left_details #comments .comment{
+			width:500px;
+			border-left: 2px solid #33342F;
+			border-bottom: 1px solid #8B8178;
+			padding:0px 15px 25px 20px;
+			margin-bottom: 20px;
+		}
+			#wrapper_restaurant #left_details #comments .comment p{
+				margin:0px;
+				padding: 0px;
+			}
+			#wrapper_restaurant #left_details #comments .comment p:last-child{
+				margin:10px 0px 0px 0px;
+				padding:0px;
+			}
+			#wrapper_restaurant #left_details #comments .comment .categories{
+				margin: 15px 0px 0px 0px;
+			}
+				#wrapper_restaurant #left_details #comments .comment .categories li:first-child{
+					margin: 0px 20px 0px 0px;
+					text-decoration:underline;
+				}
+				#wrapper_restaurant #left_details #comments .comment .categories li{
+					display: inline;
+					margin: 0px 20px;
+					text-decoration:underline;
+				}
+			#wrapper_restaurant #left_details #comments .comment .ratings{
+				margin: 5px 0px 0px 0px;
+			}
+				#wrapper_restaurant #left_details #comments .comment .ratings li:first-child{
+					margin: 0px 5px 0px 0px;
+				}
+				#wrapper_restaurant #left_details #comments .comment .ratings li{
+					display: inline;
+					margin: 0px 8px;
+				}
+				#wrapper_restaurant #left_details #comments .comment .ratings li img{
+					width:96px;
+					height:19px;
+					border: 0px;
+				}
+	/* Restaurant detailed page - right restaurants info */
+	#wrapper_restaurant #right_list{
+		width:480px;
+	}
+		#wrapper_restaurant #side_bar_form .text_field:focus{
+			outline: 0;
+		}
+			#wrapper_restaurant #side_bar_form .text_field{
+				width:390px;
+				-webkit-border-radius: 30px;
+				-moz-border-radius: 30px;
+				border-radius: 30px;
+				margin: 0px 0px 0px 20px;
+			}
+			::-webkit-input-placeholder{
+			   color: #428bca;
+			   font-weight: bold;
+			   background-color: #ffffff;
+			}
+			:-moz-placeholder{ /* Firefox 18- */
+			   color: #428bca;
+			   font-weight: bold;  
+			}
+			::-moz-placeholder{  /* Firefox 19+ */
+			   color: #428bca;
+			   font-weight: bold;
+			}
+			:-ms-input-placeholder{  
+			   color: #428bca;
+			   font-weight: bold;  
+			}
+			#wrapper_restaurant #side_bar_form #checkbox{
+				margin: 0px 0px 20px 5px;
+				color: #428bca;
+			   	font-weight: bolder;
+			   	font-family: 'Candal', sans-serif;
+			}
+				#wrapper_restaurant #side_bar_form #checkbox label:first-child{
+					margin: 0px 10px 0px 0px;
+					font-size: 14px;
+				}
+				#wrapper_restaurant #side_bar_form #checkbox .checkbox{
+					margin: 0px 10px;
+					font-size: 14px;
+				}
+				#wrapper_restaurant #side_bar_form #checkbox .big-checkbox{
+					-webkit-appearance: none;
+					background-color: #fafafa;
+					border: 1px solid #cacece;
+					cursor: pointer;
+					box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+					padding: 6px;
+					border-radius: 3px;
+					position: relative;
+				}
+				#wrapper_restaurant #side_bar_form #checkbox .big-checkbox:active{
+					box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+				}
+
+				#wrapper_restaurant #side_bar_form #checkbox .big-checkbox:checked{
+					background-color: #e9ecee;
+					border: 1px solid #adb8c0;
+					box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+					color: #99a1a7;
+				}
+				#wrapper_restaurant #side_bar_form #checkbox .big-checkbox:checked:after{
+					content: '\2714';
+					font-size: 12px;
+					position: absolute;
+					top: 0px;
+					left: 1px;
+					color: #99a1a7;
+				}
+		#wrapper_restaurant #right_list #side_bar_list{
+			padding: 0px;
+		}
+		#wrapper_restaurant #right_list .restaurant_info{
+			border-bottom: 2px solid #D8D9DA;
+			padding: 10px 0px 15px 20px;
+		}
+			#wrapper_restaurant #right_list .restaurant_info h3{
+				margin: 0px;
+			}		
+				#wrapper_restaurant #right_list .restaurant_info img{
+					width:70px;
+					height:70px;
+					vertical-align: top;
+					border:1px solid black;
+				}
+				#wrapper_restaurant #right_list .restaurant_info a{
+					margin: 0px 0px 0px 10px;
+					border-bottom: 1px solid grey;
+					text-decoration: none;
+				}
+			#wrapper_restaurant #right_list .restaurant_info p:first-child{
+				margin: 10px 0px 0px 80px;
+				line-height: 17px;
+			}
+			#wrapper_restaurant #right_list .restaurant_info p{
+				margin: 0px 0px 0px 80px;
+				line-height: 17px;
+			}
+			#wrapper_restaurant #right_list .restaurant_info .categories{
+				margin: 15px 0px 0px 0px;
+			}
+				#wrapper_restaurant #right_list .restaurant_info .categories li:first-child{
+					margin: 0px 20px 0px 0px;
+					text-decoration:underline;
+				}
+				#wrapper_restaurant #right_list .restaurant_info .categories li{
+					display: inline;
+					margin: 0px 20px;
+					text-decoration:underline;
+				}
+			#wrapper_restaurant #right_list .restaurant_info .ratings{
+				margin: 5px 0px 0px 0px;
+			}
+				#wrapper_restaurant #right_list .restaurant_info .ratings li:first-child{
+					margin: 0px 5px 0px 0px;
+				}
+				#wrapper_restaurant #right_list .restaurant_info .ratings li{
+					display: inline;
+					margin: 0px 8px;
+				}
+				#wrapper_restaurant #right_list .restaurant_info .ratings li img{
+					width:96px;
+					height:19px;
+					border: 0px;
+				}
+		#wrapper_restaurant #right_list div:last-child{
+			border-bottom:0px; 
+			padding: 10px 0px 15px 20px;
+		}
